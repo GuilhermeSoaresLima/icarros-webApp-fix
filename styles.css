@@ -47,7 +47,6 @@
 .login-list {
   list-style-type: none;
   display: inline-flex;
-  padding: 15px;
 }
 
 .login-name {
@@ -58,6 +57,7 @@
 .menu-items {
   width: 100%;
   display: inline-flex;
+  background-color: rgb(255, 153, 0);
 }
 
 .nav-container {
