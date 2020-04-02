@@ -43,7 +43,9 @@
     background-color: #2060cc !important;
     padding-bottom: 10px;
     width: 100%;
-    height: 64px;
+    /* height: 64px; */
+    height: 55px;
+    display: inline-flex;
   }
 }
 
@@ -90,17 +92,34 @@
 
 @media (max-width: 992px) {
   .menu-items {
+    /* width: auto;
+    display: inline-flex;
+    background-color: unset; */
+    display: none;
+  }
+}
+
+.menu-items-mobile {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .menu-items-mobile {
     width: auto;
     display: inline-flex;
     background-color: unset;
     /* display: block; */
   }
 }
-
 .nav-container {
   text-align: center;
   width: 100%;
   height: 100%;
+}
+@media (max-width: 1105px) {
+  .nav-container {
+    display: inline-flex;
+  }
 }
 
 @media (max-width: 992px) {
@@ -108,15 +127,17 @@
     width: 60%;
     height: auto;
     position: fixed;
-    top: 66px;
+    /* top: 75px; */
+    top: 64px;
     background-color: #fff;
     min-height: 100%;
     z-index: 3;
-    left: -60%;
+
     transition: 0.5s;
     overflow-y: auto;
     left: 0;
     text-align: unset;
+    display: block;
   }
 }
 .nav-list {
@@ -165,19 +186,22 @@
     color: #444;
     display: block;
     font-weight: 400;
-    padding: 8px 10px 6px 10px;
+    /* padding: 8px 10px 6px 10px; */
+    padding: 8px 0px 6px 0px;
     font-size: 15px;
     width: 100%;
   }
 }
 
-@media (max-width: 992px) .nav__link {
-  color: #444;
-  display: block;
-  font-weight: 400;
-  padding: 8px 10px 6px 10px;
-  font-size: 15px;
-  width: 100%;
+@media (max-width: 992px) {
+  .nav__link {
+    color: #444;
+    display: block;
+    font-weight: 400;
+    padding: 8px 10px 6px 10px;
+    font-size: 15px;
+    width: 100%;
+  }
 }
 
 .nav-overlay {
@@ -200,6 +224,32 @@
   align-items: center;
   justify-content: center;
   display: inline-flex;
+}
+
+@media (max-width: 992px) {
+  .align-item {
+    align-items: unset;
+    justify-content: unset;
+    display: inline-flex;
+  }
+}
+.item-mobile {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .item-mobile {
+    display: block;
+  }
+}
+
+.account-user {
+  background-color: #e7e7e7;
+}
+
+.img-app {
+  height: 114px;
+  background-color: #e7e7e7;
 }
 
 .white-color {
