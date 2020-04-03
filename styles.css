@@ -1,23 +1,23 @@
-.header-container {
+.header {
   height: 64px;
   background-color: rgb(0, 255, 0);
   margin: 0;
 }
 
-.menu-container {
+.header--container {
   height: 100%;
   background-color: red;
   margin-right: auto;
   margin-left: auto;
 }
 
-.menu {
+.header--menu {
   display: inline-flex;
   width: 100%;
   height: 100%;
 }
 
-.header-logo {
+.header--menu_logo {
   width: 120px;
   background-color: blue;
 }
@@ -30,53 +30,53 @@
   display: none;
 }
 
-.header-login {
+.header--nav_login {
   background-color: purple;
   min-width: 120px;
   height: 100%;
   float: right;
 }
 
-.login-app {
+.header--nav_login_app {
   padding: 0 15px;
 }
 
-.login-list {
+.header--nav_login_list {
   list-style-type: none;
   display: inline-flex;
   font-family: "Open Sans", sans-serif;
 }
 
-.login-name {
+.header--nav_login-name {
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   padding: 0 15px;
 }
 
-.menu-items {
+.header--menu_items-web {
   width: 100%;
   display: inline-flex;
   background-color: rgb(255, 153, 0);
 }
 
-.menu-items-mobile {
+.header--menu_items-mobile {
   display: none;
 }
 
-.nav-container {
+.header--nav {
   text-align: center;
   width: 100%;
   height: 100%;
   display: inline-flex;
 }
 
-.nav-list {
+.header--nav_list {
   list-style-type: none;
   display: inline-flex;
   justify-content: center;
   width: 100%;
 }
 
-.nav-item {
+.header--nav_item {
   margin: 0px 5px 0px 5px;
 
   font-weight: 600;
@@ -86,15 +86,12 @@
   height: 64px;
 }
 
-.nav-link {
+.header--nav_link {
   padding: 22px 12px;
   float: left;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
   cursor: pointer;
-}
-
-.nav-overlay {
 }
 
 .align-item {
@@ -109,6 +106,7 @@
 
 .account-user {
   background-color: #e7e7e7;
+  padding: 5px !important;
 }
 
 .img-app {
@@ -119,14 +117,10 @@
   display: inline-flex;
 }
 
-.white-color {
-  color: white;
-}
-
 /* Largura 1290px */
 
 @media only screen and (min-width: 1290px) {
-  .menu-container {
+  .header--container {
     width: 1280px;
     height: 100%;
   }
@@ -135,7 +129,7 @@
 /* Largura 1105px */
 
 @media (max-width: 1105px) {
-  .nav-container {
+  .header--nav {
     display: inline-flex;
   }
 }
@@ -143,10 +137,10 @@
 /* Largura 992px */
 
 @media (max-width: 992px) {
-  .menu {
+  .header--menu {
     display: unset;
   }
-  .header-logo {
+  .header--menu_logo {
     background-color: #2060cc;
     padding: 10px 10px 0px 10px;
     width: 100%;
@@ -163,21 +157,21 @@
     width: 90px;
   }
 
-  .header-login {
+  .header--nav_login {
     background-color: transparent;
     min-width: unset;
     height: auto;
     float: unset;
   }
-  .menu-items {
+  .header--menu_items-web {
     display: none;
   }
-  .menu-items-mobile {
+  .header--menu_items-mobile {
     width: auto;
     display: inline-flex;
     background-color: unset;
   }
-  .nav-container {
+  .header--nav {
     width: 60%;
     height: auto;
     position: fixed;
@@ -192,20 +186,20 @@
     display: block;
   }
 
-  .nav-list {
+  .header--nav_list {
     display: block;
     float: none;
     margin: 0 0 200px 0;
     width: 100%;
   }
-  .nav-item {
+  .header--nav_item {
     border-top: 0 none transparent;
     height: auto;
     float: none;
     border-bottom: 0;
   }
 
-  .nav-link {
+  .header--nav_link {
     color: #444;
     display: block;
     font-weight: 400;
@@ -214,7 +208,7 @@
     width: 100%;
   }
 
-  .nav-overlay {
+  .header--nav_overlay {
     position: fixed;
     width: 100%;
     height: auto;
@@ -239,7 +233,7 @@
     display: inline-flex;
   }
 
-  .acout-user-mobile {
+  .account-user-mobile {
     margin: 0;
   }
 }
