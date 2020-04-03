@@ -238,4 +238,8 @@
     align-items: center;
     display: inline-flex;
   }
+
+  .acout-user-mobile {
+    margin: 0;
+  }
 }
